@@ -15,8 +15,8 @@ function Home() {
     }
     return (
         <div className="container m-5">
-            <button className='m-5 btn-primary'  onClick={clickHandle} name='login'>Login</button>
-            <button className='m-5 btn-secondary'  onClick = {clickHandle}name = 'registration' > Registration </button>
+            <button className='m-5 btn btn-primary'  onClick={clickHandle} name='login'>Login</button>
+            <button className='m-5 btn btn-secondary'  onClick = {clickHandle}name = 'registration' > Registration </button>
 
         </div>
     )

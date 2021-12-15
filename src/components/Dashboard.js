@@ -37,7 +37,6 @@ const Dashboard = () => {
 
                 console.log(json)
                 setresp(json);
-                // setuser(json.data);
         })
     }
     return (
