@@ -2,10 +2,6 @@ import React, {
     useState
 } from 'react'
 import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-    Link,
   useNavigate
 } from "react-router-dom";
 
@@ -23,7 +19,6 @@ const Login = () => {
     }
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(input);
         const inputJson = {
             "email": input.email,
             "password": input.password
@@ -49,28 +44,12 @@ const Login = () => {
         <>
         <form className = "registration-form p-5"
         onSubmit = {handleSubmit}>
-       
 
-
-        <label htmlFor = "email" className="form-label" > Email: </label>  
-        <input type = "text"
-                    name='email'
-                    className = "form-control"
-        onChange = {
-            handleChange
-        }
-        />
+        <label htmlFor="email" className="form-label" > Email: </label>  
+        <input type = "text" name='email' className = "form-control" onChange = { handleChange }/>
 
         <label htmlFor = "password" className="form-label"> Password: </label> 
-        <input type = "password"
-        className = "form-control"
-        name = "password"
-        onChange = {
-            handleChange
-        }
-
-        />
-
+        <input type = "password" className = "form-control" name = "password" onChange = { handleChange }/>
 
         <input className="btn btn-primary m-3" type = "submit"
         name = "submit" />

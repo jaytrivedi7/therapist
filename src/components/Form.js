@@ -15,7 +15,6 @@ const Form = () => {
     }
     const handleSubmit = (event) => {
         event.preventDefault();
-        console.log(input);
         const inputJson = {"email":input.email, "password":input.password};
        fetch('https://reqres.in/api/register/', {
            method: 'POST',
@@ -56,10 +55,10 @@ const Form = () => {
 
                 < label htmlFor = "email" > Email: </label> 
                 <input
-                type = "text"
+                    type = "text"
                     name='email'
                     className = "form-control"
-                onChange = {handleChange}
+                    onChange = {handleChange}
                 />
 
                 < label htmlFor="password" > Password: </label>
@@ -68,7 +67,6 @@ const Form = () => {
                     className="form-control"
                     name="password"
                     onChange = {handleChange}
-
                 />
                 
                 

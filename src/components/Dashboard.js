@@ -36,6 +36,7 @@ const Dashboard = () => {
             .then((json) => {
 
                 console.log(json)
+                setresp(json);
                 // setuser(json.data);
         })
     }
@@ -69,8 +70,8 @@ const Dashboard = () => {
                                         <td>{item.last_name}</td>
                                         <td>{item.email}</td>
                                         <td><img className="img-fluid img-thumbnail profimg" src={item.avatar} alt="Logo" /></td>
-                                        <td><button className="btn btn-primary" name="edit" onClick={handleAction}>Edit</button></td>
-                                        <td><button className="btn btn-primary" name="delete" onClick={handleAction}id={item.id}>Delete</button></td>
+                                        <td><button className="btn btn-primary" name="edit" onClick={handleAction} id={item.id}>Edit</button></td>
+                                        <td><button className="btn btn-primary" name="delete" onClick={handleAction} id={item.id}>Delete</button></td>
 
                                     </tr >
 
@@ -79,7 +80,10 @@ const Dashboard = () => {
 
                         </table>
 
-                            
+                        <div className="row m-3">
+                            <h3 className="m-1" >Response From the API server  : <h4>{resp.updatedAt}</h4></h3>
+                            <h5>(For Delete operation check the network debug in inspector tool)</h5>
+                        </div>     
                     </div>
                 </div>
             </div>
