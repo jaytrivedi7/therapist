@@ -1,3 +1,7 @@
+# This project contains Login Form , Registration Form and a dashboard
+which can update and delete the users.
+with registration user can be added.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
